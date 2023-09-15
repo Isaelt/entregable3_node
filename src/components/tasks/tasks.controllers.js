@@ -53,7 +53,7 @@ const updateTaskCompleted = async (req, res) => {
     try {
         const { id } = req.params;
 
-        const completed = await Task.update({"completedId":2}, {
+        const completed = await Task.update({"completedId":1}, {
             where: {id}
         });
         res.json(completed);
