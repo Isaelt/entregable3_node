@@ -12,7 +12,8 @@ const Task = db.define('tasks', {
     completedId:{
         type: DataTypes.INTEGER,
         allowNull: false,
-        field: "completed_id"
+        field: "completed_id",
+        defaultValue:2
     },
     userId: {
         type: DataTypes.INTEGER,
